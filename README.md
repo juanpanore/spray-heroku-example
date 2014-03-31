@@ -6,9 +6,9 @@ Spray Example App Deployable to Heroku
 
 This is an example of a simple Rest API in Spray that can be deployed to Heroku with New Relic stats supplied by Kamon.
 
-To run the tests use  sbt test -Dconfig.resource=src/main/resources/dev.conf as you need to use a different akka conf file.
+To run the tests use  `sbt test -Dconfig.resource=src/main/resources/dev.conf` as you need to use a different akka conf file.
 
-To run the example locally use foreman. Create a .env file with the following variables defined. Add in a new relic licence key and app name. If you don''t have one add the new relic app in Heroku. You must have a newrelic.yml file in the project root, you can get this from the new relic dashboard for your app.
+To run the example locally use foreman. Create a .env file with the following variables defined. Add in a new relic licence key and app name. If you don''t have one add the new relic app in Heroku. You must have a newrelic.yml file in the project root, you can get this from the New Relic dashboard for your app.
 
 Heroku config variables
 -----------------------
