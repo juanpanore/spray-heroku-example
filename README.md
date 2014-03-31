@@ -28,12 +28,13 @@ If you want to test the authentication add ```AUTH=yourauthkey``` to the .env fi
 ```curl -u yourauthkey:yourauthkey http://localhost:5000/search?search=hello```
 
 To run the app on Heroku, first create a new Heroku app, either on the command line or on Heroku's website. Add the NewRelic add-on to your app. Go to the NewRelic dashboard page by clicking on the NewRelic link on the Heroku app dashboard. Here you can download your newrelic.yml file and get the newrelic license key. Heroku should add these environment variables automatically. You can check the Heroku environment by running 
-```heroku config```
+```heroku config```.
+
 You will need to add an auth setting for the app's authentication by running 
 ```heroku config:set AUTH=xxx```
 , where xxx is the basic auth key you want to use, and
 ```heroku config:set AKKA_OPTS=-Dconfig.file=target/universal/stage/conf/application.conf```
-to set the Akka conf file
+to set the Akka conf file.
 
 Heroku config variables
 -----------------------
