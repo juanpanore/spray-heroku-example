@@ -42,6 +42,6 @@ PATH=.jdk/bin:.sbt_home/bin:/usr/local/bin:/usr/bin:/bin
 REPO=/app/.sbt_home/.ivy2/cache
 SBT_OPTS=-Xmx384m -Xss512k -XX:+UseCompressedOops
 ```
-To run the app you deploy using `git push heroku master`. YOu should see Heroku detect the Scala code, build the app and execute it. You can check the newrelic stats for each of the endpoints.
+To run the app you deploy using `git push heroku master`. You should see Heroku detect the Scala code, build the app and execute it. You can check the newrelic stats for each of the endpoints.
 
 
